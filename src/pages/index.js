@@ -1,81 +1,55 @@
 import React from "react"
-
-import {
-  Config,
-  Price,
-  VariantSelect,
-  AvailabilityMessage,
-  AvailabilityMessageMinDays,
-  AvailabilityMessageMaxDays,
-  AvailabilityMessageShippingMethodName,
-  AvailabilityMessageShippingMethodPrice,
-  AddToBag,
-  ShoppingBagItemsCount,
-  ShoppingBagSubtotal,
-  ShoppingBagShipping,
-  ShoppingBagPayment,
-  ShoppingBagDiscount,
-  ShoppingBagTaxes,
-  ShoppingBagTotal,
-  ShoppingBagItems,
-  ShoppingBagItemImage,
-  ShoppingBagItemName,
-  ShoppingBagItemUnitAmount,
-  ShoppingBagItemQtyContainer,
-  ShoppingBagItemTotalAmount,
-  ShoppingBagItemRemove,
-  Checkout
-} from 'commercelayer-react'
+import * as CLayer from 'commercelayer-react'
 
 export default () => (
   <div>
     <hr/>
-    <Price skuCode="BABYONBU000000FFFFFFNBXX"/>
+    <CLayer.Price skuCode="BABYONBU000000FFFFFFNBXX"/>
     <hr/>
-    <VariantSelect skus={[
+    <CLayer.VariantSelect skus={[
       {code: "BABYONBU000000FFFFFFNBXX", name: "Black Baby Onesie Short Sleeve with White Logo (New born)", label: "New born"},
       {code: "BABYONBU000000FFFFFF6MXX", name: "Black Baby Onesie Short Sleeve with White Logo (6 Months)", label: "6 Months"},
       {code: "BABYONBU000000FFFFFF12MX", name: "Black Baby Onesie Short Sleeve with White Logo (12 Months)", label: "12 Months"}]} />
     <hr/>
-    <AvailabilityMessage
+    <CLayer.AvailabilityMessage
       availableTemplate={
         <div>
-          Available in <AvailabilityMessageMinDays />-<AvailabilityMessageMaxDays /> days with <AvailabilityMessageShippingMethodName /> (<AvailabilityMessageShippingMethodPrice/>)
+          Available in <CLayer.AvailabilityMessageMinDays />-<CLayer.AvailabilityMessageMaxDays /> days with <CLayer.AvailabilityMessageShippingMethodName /> (<CLayer.AvailabilityMessageShippingMethodPrice/>)
         </div>
       }
       unavailableTemplate={
         <p>The selected SKU is not available</p>
       } />
     <hr/>
-    <AddToBag />
+    <CLayer.AddToBag />
     <hr/>
-    <ShoppingBagItemsCount />
-    <ShoppingBagSubtotal />
-    <ShoppingBagShipping />
-    <ShoppingBagPayment />
-    <ShoppingBagDiscount />
-    <ShoppingBagTaxes />
-    <ShoppingBagTotal />
+    <CLayer.ShoppingBagItemsCount />
+    <CLayer.ShoppingBagSubtotal />
+    <CLayer.ShoppingBagShipping />
+    <CLayer.ShoppingBagPayment />
+    <CLayer.ShoppingBagDiscount />
+    <CLayer.ShoppingBagTaxes />
+    <CLayer.ShoppingBagTotal />
     <hr/>
-    <ShoppingBagItems
+    <CLayer.ShoppingBagItems
       itemTemplate={
         <div>
-          <ShoppingBagItemImage />
-          <ShoppingBagItemName />
-          <ShoppingBagItemUnitAmount />
-          <ShoppingBagItemQtyContainer />
-          <ShoppingBagItemRemove />
-          <ShoppingBagItemTotalAmount />
+          <CLayer.ShoppingBagItemImage />
+          <CLayer.ShoppingBagItemName />
+          <CLayer.ShoppingBagItemUnitAmount />
+          <CLayer.ShoppingBagItemQtyContainer />
+          <CLayer.ShoppingBagItemRemove />
+          <CLayer.ShoppingBagItemTotalAmount />
         </div>
       }
     />
     <hr/>
-    <Checkout/>
+    <CLayer.Checkout/>
     <hr/>
-    <Config
-      baseUrl="https://dato-commerce.commercelayer.io"
-      clientId="4105df911df6056f8bd9a233ac4edd90c9693fecfc5ecfffcba3e3ae4af45827"
-      marketId="156"
+    <CLayer.Config
+      baseUrl="https://static-commerce.commercelayer.io"
+      clientId="351020e9c84f2076755083f08bfe8e47365a76395db1059c3219c37abff86534"
+      marketId="185"
       countryCode="US"
       languageCode="en"
       cartUrl="https://example.com/cart"
