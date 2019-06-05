@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "gatsby": "^2.0.76",
-    "gatsby-plugin-commercelayer": "^1.1.4",
+    "gatsby-plugin-commercelayer": "^1.2.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   },
