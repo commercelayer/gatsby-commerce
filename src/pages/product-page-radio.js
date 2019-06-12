@@ -99,16 +99,6 @@ export default class App extends Component {
 
           <hr/>
 
-          <CLayer.Config
-            baseUrl="https://static-commerce.commercelayer.io"
-            clientId="351020e9c84f2076755083f08bfe8e47365a76395db1059c3219c37abff86534"
-            marketId="185"
-            countryCode="US"
-            languageCode="en"
-            cartUrl="https://example.com/cart"
-            returnUrl="https://example.com/return"
-            privacyUrl="https://example.com/privacy"
-            termsUrl="https://example.com/terms" />
         </div>
       </Layout>
     )
