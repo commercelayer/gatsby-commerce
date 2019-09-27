@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-starter-commercelayer",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "A Commerce Layer starter for Gatsby",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
@@ -13,15 +13,15 @@
   },
   "dependencies": {
     "gatsby": "^2.15.24",
-    "gatsby-plugin-commercelayer": "^1.2.6",
+    "gatsby-plugin-commercelayer": "^1.2.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/commercelayer/gatsby-commerce"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/commercelayer/gatsby-commerce/issues"
   }
 }
